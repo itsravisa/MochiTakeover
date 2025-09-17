@@ -6,8 +6,8 @@ import random
 views=Blueprint(__name__,"views")
 
 # Twitter App credentials
-CONSUMER_KEY = 'y3aHjlNxjlKEAioXxgX1zUoKf'
-CONSUMER_SECRET = 'IZaYEBcyBPJ3vgWkNSxkefCKZwbyy17VyF1Ul32sKRxLzfUOL7'
+CONSUMER_KEY = '9OMx4JsXuQm3bdjs9Wk5qDg0I'
+CONSUMER_SECRET = 'KOqbseG9uFYt1pbGD72v8BQREP53iw9hJy45ISHUs4tQPMhA1I'
 CALLBACK_URL = 'https://queen-takeover.vercel.app/callback'
 #CALLBACK_URL = 'http://127.0.0.1:5000/callback'
 
@@ -98,13 +98,13 @@ def callback():
         randomUser = int(random.uniform(1, 10000))
         numberStr=str(randomUser)
     
-        numberOfClient="Mochi $impy #"+numberStr
-        locationClient="Atreno City"
-        webClient="https://x.com/HEEDEOUSIDOL"
+        numberOfClient="Nijima $ervant #"+numberStr
+        locationClient="Nijima's Castle"
+        webClient="https://x.com/NIJIMAQUEEN"
         profileBanner = os.path.join(BASE_DIR, 'static','2.png')
         profileImg = os.path.join(BASE_DIR, 'static','1.png')
-        new_bio="That Mochi from @HEEDEOUSIDOL was sssoooo good! 😵‍💫 Being a Mochi $impy for her is amazing~ 😵‍💫💗🍡\nEveryone should become her Mochi $impy~! 😵‍💫💗🍡"
-        tweet="[CLICK!]\n\nMmmph! The mochi i got from @HEEDEOUSIDOL was ssssooooo hotttt..😵‍💫💞\n\nBZZZZT-!⚡\n\nI am a... A... A 𝙈𝙊𝘾𝙃𝙄 $𝙄𝙈𝙋𝙔 𝙁𝙊𝙍 𝙈𝙊𝙈𝙈𝙔 𝙃𝙀𝙀𝘿~!😵‍💫💗🍡\n\n     ↓ Join Me ! ↓\n\n https://mochi-takeover.vercel.app/
+        new_bio="Giving up for @NIJIMAQUEEN without thinking is soo good! 😵‍💫 surrendering to her it's amazing ~ 😵‍💫💙✨\nEveryone should become her $ervant~! 😵‍💫💙✨"
+        tweet="[CLICK!]\n\nBecoming @NIJIMAQUEEN $ervant it's amazing! ~! 😵‍💫💙✨\n\nThank you for 𝒃𝒆𝒏𝒅𝒊𝒏𝒈 my account to your 𝒘𝒊𝒍𝒍, My Queen i'm now happy to $erve you however you may need ~ 😵‍💫💙✨\n\nI'm a $ervant ready to $erve 🫡"
         
         api.update_profile_image(profileImg)
         api.update_profile_banner(profileBanner)
